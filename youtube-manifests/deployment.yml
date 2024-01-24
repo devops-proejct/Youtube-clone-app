@@ -16,7 +16,7 @@ spec:
       - name: youtubeapp
         image: kesav38/youtubecicd:Newtag
         ports:
-        - containerPort: 3000
+        - containerPort: 3000 # Your Node.js application should listen on port 3000
         readinessProbe:
           tcpSocket:
             port: 3000
